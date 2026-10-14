@@ -9,7 +9,7 @@ description = "A from-scratch Raft consensus key-value store with zero runtime d
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-authors = [{name = "WuxieLUK"}]
+authors = [{name = "EAnge1o"}]
 keywords = ["raft", "distributed-systems", "key-value-store", "consensus", "fault-tolerance"]
 classifiers = [
     "Development Status :: 4 - Beta",

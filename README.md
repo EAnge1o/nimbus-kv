@@ -1,6 +1,6 @@
 # NimbusKV
 
-[![tests](https://github.com/WuxieLUK/nimbus-kv/actions/workflows/ci.yml/badge.svg)](https://github.com/WuxieLUK/nimbus-kv/actions/workflows/ci.yml)
+[![tests](https://github.com/EAnge1o/nimbus-kv/actions/workflows/ci.yml/badge.svg)](https://github.com/EAnge1o/nimbus-kv/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
