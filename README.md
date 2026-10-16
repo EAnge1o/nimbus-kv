@@ -8,9 +8,9 @@
 
 > A dependency-free distributed key-value store implementing the Raft consensus algorithm from scratch in Python.
 
-## 为什么是它
+## 项目定位
 
-你的仓库已经有不少应用层项目：RAG、智能体、校园交易平台、健康管理、职业规划。这个仓库补齐的是 **分布式系统 / 云原生基础设施** 这一类技术底座项目，也是竞赛答辩中容易被评委追问、也最容易体现硬实力的方向。
+本项目聚焦 **分布式系统 / 云原生基础设施**：Raft 的领导者选举、日志复制、快照压缩与线性一致读全部手写，不使用 etcd、hashicorp/raft 或 ZooKeeper，只用 Python 标准库。
 
 ## 功能特性
 
@@ -23,7 +23,7 @@
 - **故障注入基准**：`benchmarks/fault_injection.py` 循环杀 leader 并测量恢复时间
 - **零依赖**：只用 Python 标准库，便于评审、教学和 CI
 
-## 面试演示
+## 快速演示
 
 ![demo](docs/demo.gif)
 
@@ -33,7 +33,7 @@ python demo.py
 
 一条命令启动三节点集群 → 写入数据 → 杀死 leader → 自动恢复 → 读出数据。
 
-完整面试答辩材料见 [`INTERVIEW.md`](INTERVIEW.md)。
+完整技术说明与常见问题见 [`docs/faq.md`](docs/faq.md)。
 
 ## 快速开始
 
@@ -108,7 +108,7 @@ python -m unittest discover -s tests -v
 
 测试覆盖日志冲突截断、状态机、持久化恢复，以及一个真实三进程集群的 **杀 leader 后故障转移** 集成测试。
 
-## 竞赛答辩定位
+## 技术亮点
 
 - **技术深度**：完整实现 Raft 安全性规则，而不是简单封装现成库
 - **可验证性**：集成测试和故障注入脚本提供可复现证据
